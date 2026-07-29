@@ -98,8 +98,8 @@ export const About: React.FC = () => {
                       <span className="text-blue-400 shrink-0 font-semibold">2024 - 2028</span>
                     </div>
                     <div className="flex items-center justify-between text-slate-400">
-                      <span className="truncate pr-1">JNV Mysore</span>
-                      <span className="text-emerald-400 shrink-0">2020 - 2024</span>
+                      <span className="truncate pr-1">Anna University, India</span>
+                      <span className="text-emerald-400 shrink-0">2024 - 2028</span>
                     </div>
                   </div>
                 </div>

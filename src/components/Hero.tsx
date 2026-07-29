@@ -224,7 +224,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                     <CheckCircle2 className="w-4 h-4" />
                     <span className="font-medium">10+ Projects Ready</span>
                   </div>
-                  <span className="text-[11px] text-slate-400 font-mono">CSE @ JNV</span>
+                  <span className="text-[11px] text-slate-400 font-mono">CSE @ SNS College</span>
                 </div>
 
                 {/* Floating Glow Accents */}

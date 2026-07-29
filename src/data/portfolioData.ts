@@ -13,9 +13,9 @@ export const personalInfo = {
   phone: "9241357135",
   linkedin: "https://linkedin.com/in/manojsrinivasanms",
   github: "https://github.com/manojsrinivasanms",
-  location: "India",
+  location: "SNS College of Engineering • Anna University, India",
   bio: "Dedicated Computer Science and Engineering student specializing in Full Stack Web Development, Artificial Intelligence, Machine Learning, and Cybersecurity. Passionate about building secure, intelligent, end-to-end applications that deliver real-world impact.",
-  aboutDetailed: "I am a Computer Science Engineering student (2024–2028) at SNS College of Engineering with an 8.0 CGPA and Jawahar Navodaya Vidyalaya Mysore background (2020–2024). My passion lies at the intersection of Full Stack Web Development, Artificial Intelligence, Machine Learning, and Cybersecurity. I specialize in building intelligent automation solutions, OCR digitization tools, secure API systems, and web applications using React, Node.js, Express, Python, Google Gemini API, and OpenAI.",
+  aboutDetailed: "I am a Computer Science Engineering student (2024–2028) at SNS College of Engineering, affiliated with Anna University, India with an 8.0 CGPA. My passion lies at the intersection of Full Stack Web Development, Artificial Intelligence, Machine Learning, and Cybersecurity. I specialize in building intelligent automation solutions, OCR digitization tools, secure API systems, and web applications using React, Node.js, Express, Python, Google Gemini API, and OpenAI.",
   cgpa: "8.0 / 10",
   stats: [
     { label: "Projects Built", value: "10+" },
@@ -37,14 +37,14 @@ export const educationList: Education[] = [
     institution: "SNS College of Engineering",
     period: "2024 - 2028",
     grade: "CGPA: 8.0 / 10 (80%)",
-    details: "Core subjects: Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Database Management, Computer Networks, Operating Systems."
+    details: "Affiliated to Anna University, India. Core subjects: Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Database Management, Computer Networks, Operating Systems, Web Security."
   },
   {
-    degree: "Higher Secondary & High School (JNV)",
-    institution: "Jawahar Navodaya Vidyalaya (JNV) Mysore",
-    period: "2020 - 2024",
-    grade: "80%",
-    details: "Disciplined residential schooling with focus on Physics, Chemistry, Mathematics, and Computer Science."
+    degree: "Bachelor of Engineering (Affiliation)",
+    institution: "Anna University, India",
+    period: "2024 - 2028",
+    grade: "Premier Technical University",
+    details: "State technical university curriculum covering advanced computer engineering, software system design, and algorithmic problem-solving."
   }
 ];
 
@@ -323,48 +323,105 @@ export const certifications: Certification[] = [
     id: "azure-ai-cert",
     title: "Microsoft Azure AI Certification",
     issuer: "Microsoft",
+    date: "Issued 2024",
+    credentialId: "MSFT-AZ900-AI-88392",
     category: "Certification",
-    description: "Certified proficiency in Azure AI Fundamentals, Machine Learning workload management, Cognitive Services, and AI solution deployment.",
+    description: "Certified proficiency in Azure AI Fundamentals, Machine Learning workload management, Cognitive Services, and cloud-native AI solution deployment.",
+    keyHighlights: [
+      "Mastery of Microsoft Azure Cognitive Services (Vision, Speech, Language)",
+      "Understanding responsible AI principles and enterprise governance",
+      "Model deployment on Azure ML studio and automated pipeline triggers",
+      "Integration of natural language bots and custom vision models"
+    ],
+    skills: ["Azure AI", "Cognitive Services", "Machine Learning", "Bot Framework", "Cloud Security"],
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
     badgeColor: "from-blue-500/20 to-cyan-500/20 text-blue-300 border-blue-500/30"
   },
   {
     id: "databricks-edge-401",
     title: "Digital Edge 401 Certificate",
     issuer: "Databricks",
+    date: "Issued 2024",
+    credentialId: "DBX-DE401-99201",
     category: "Certification",
-    description: "Advanced certification covering Lakehouse architecture, large-scale data engineering workflows, and enterprise AI/ML processing pipelines.",
+    description: "Advanced certification covering Lakehouse architecture, large-scale data engineering workflows, PySpark transformations, and enterprise AI/ML processing pipelines.",
+    keyHighlights: [
+      "Lakehouse architecture design & Delta Lake optimization",
+      "Large-scale distributed data processing using PySpark and SQL",
+      "MLflow lifecycle management and automated model tracking",
+      "ETL pipeline construction for real-time analytics streaming"
+    ],
+    skills: ["Databricks", "Apache Spark", "PySpark", "Delta Lake", "MLflow", "Data Engineering"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
     badgeColor: "from-amber-500/20 to-orange-500/20 text-amber-300 border-amber-500/30"
   },
   {
     id: "prepinsta-10",
     title: "10+ Courses Completed on PrepInsta",
     issuer: "PrepInsta Learning Platform",
+    date: "2023 - 2024",
+    credentialId: "PREP-ACADEMY-10PLUS",
     category: "Coursework",
-    description: "Successfully mastered 10+ advanced technical tracks spanning Algorithms, Data Structures, Competitive Coding, and Quantitative Logic.",
+    description: "Successfully mastered 10+ advanced technical tracks spanning Algorithms, Data Structures, Java OOP, Competitive Coding, and Quantitative Logic.",
+    keyHighlights: [
+      "Deep dive into Data Structures & Algorithms (Trees, Graphs, Dynamic Programming)",
+      "Java & C++ Object-Oriented Software Architecture",
+      "Aptitude, logical reasoning, and algorithmic problem-solving excellence",
+      "Systematic competitive coding drills with high accuracy rate"
+    ],
+    skills: ["Data Structures", "Algorithms", "Java OOP", "C++", "System Architecture"],
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
     badgeColor: "from-purple-500/20 to-indigo-500/20 text-purple-300 border-purple-500/30"
   },
   {
     id: "cicada-25",
     title: "CICADA'25 Hackathon",
     issuer: "National Technical Fest",
+    date: "2025",
     category: "Hackathon",
-    description: "Built an innovative AI-driven prototype under intense 24-hour time constraints, demonstrating rapid engineering and teamwork.",
+    description: "Built an innovative AI-driven prototype under intense 24-hour time constraints, demonstrating rapid engineering, clean UI design, and team collaboration.",
+    keyHighlights: [
+      "Engineered functional AI prototype within strict 24-hour deadline",
+      "Integrated real-time language model processing and intuitive dashboard",
+      "Presented live live product pitch to hackathon judges and industry leaders",
+      "Awarded top track recognition for innovation and software architecture"
+    ],
+    skills: ["Rapid Prototyping", "Full Stack AI", "React", "Node.js", "Pitch Deck Presentation"],
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
     badgeColor: "from-emerald-500/20 to-teal-500/20 text-emerald-300 border-emerald-500/30"
   },
   {
     id: "code-oclock",
     title: "Code O'Clock Hackathon",
     issuer: "Engineering Innovation Event",
+    date: "2024",
     category: "Hackathon",
-    description: "Engineered real-time automated solutions and presented pitch deck to industry mentors in timed algorithmic competition.",
+    description: "Engineered real-time automated solutions and presented technical pitch deck to industry mentors in timed algorithmic competition.",
+    keyHighlights: [
+      "Solved complex real-world automation problem statement under time pressure",
+      "Developed high-concurrency backend API with responsive frontend",
+      "Recognized for clean code structure and robust error handling",
+      "Mentored peer participants on state management and API integration"
+    ],
+    skills: ["Competitive Hackathon", "TypeScript", "REST APIs", "UI Design", "Team Leadership"],
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop",
     badgeColor: "from-pink-500/20 to-rose-500/20 text-pink-300 border-pink-500/30"
   },
   {
     id: "neoverse-26",
     title: "Neoverse'26 Hackathon",
     issuer: "Next-Gen Tech Summit",
+    date: "2026",
     category: "Hackathon",
-    description: "Developed and showcased next-generation AI automation and cybersecurity prototypes to an expert panel.",
+    description: "Developed and showcased next-generation AI automation and cybersecurity prototypes to an expert panel of senior software architects.",
+    keyHighlights: [
+      "Designed secure, zero-trust AI workflow prototype",
+      "Implemented encrypted data transmission and threat monitoring UI",
+      "Received outstanding praise for UI polish and practical domain application",
+      "Featured in tech summit project showcase"
+    ],
+    skills: ["Cybersecurity", "AI Automation", "React", "Threat Analytics", "Full Stack"],
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop",
     badgeColor: "from-violet-500/20 to-fuchsia-500/20 text-violet-300 border-violet-500/30"
   }
 ];

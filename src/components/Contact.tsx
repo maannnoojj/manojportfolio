@@ -171,7 +171,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-[11px] font-mono text-slate-400 uppercase">Location & University</p>
-                  <p className="text-sm font-semibold text-white">Jawahar Navodaya Vidyalaya • India</p>
+                  <p className="text-sm font-semibold text-white">SNS College of Engineering • Anna University, India</p>
                 </div>
               </div>
 

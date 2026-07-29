@@ -34,6 +34,10 @@ export interface Certification {
   category: 'Certification' | 'Hackathon' | 'Coursework';
   description: string;
   credentialUrl?: string;
+  credentialId?: string;
+  skills?: string[];
+  keyHighlights?: string[];
+  image?: string;
   badgeColor?: string;
 }
 
