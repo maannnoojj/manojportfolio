@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Printer, Copy, CheckCircle2, FileText, Download, Loader2, Phone, Mail, Linkedin } from 'lucide-react';
 import jsPDF from 'jspdf';
@@ -170,16 +171,16 @@ ${personalInfo.languages.map((l) => `${l.name} (${l.level})`).join(' | ')}
     setTimeout(() => setCopiedText(false), 2500);
   };
 
-  return (
+  return createPortal(
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6">
+      <div className="fixed inset-0 z-[99999] flex items-center justify-center p-3 sm:p-6 overflow-hidden">
         {/* Backdrop */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="fixed inset-0 bg-black/85 backdrop-blur-md cursor-pointer"
+          className="fixed inset-0 bg-black/85 cursor-pointer"
         />
 
         {/* Modal Sheet */}
@@ -246,8 +247,10 @@ ${personalInfo.languages.map((l) => `${l.name} (${l.level})`).join(' | ')}
           {/* Printable Resume Document View */}
           <div
             id="ats-resume-doc"
-            data-lenis-prevent
-            className="printable-resume p-6 sm:p-10 overflow-y-auto space-y-8 bg-[#0b0b0d] text-slate-200 font-sans text-sm selection:bg-blue-500/20 flex-1 overscroll-contain"
+            data-lenis-prevent="true"
+            data-lenis-prevent-wheel="true"
+            data-lenis-prevent-touch="true"
+            className="printable-resume modal-scroll p-6 sm:p-10 overflow-y-auto space-y-8 bg-[#0b0b0d] text-slate-200 font-sans text-sm selection:bg-blue-500/20 flex-1 overscroll-contain"
           >
             
             {/* ATS Document Header */}
@@ -380,6 +383,7 @@ ${personalInfo.languages.map((l) => `${l.name} (${l.level})`).join(' | ')}
 
         </motion.div>
       </div>
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 };
